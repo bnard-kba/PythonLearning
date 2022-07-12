@@ -1,0 +1,66 @@
+   
+
+    if I want to print items in a list, i can use:
+        for i in range(len(listName)):
+
+
+
+
+can assign multiple values in a list at once if the number of
+variables is the same as the list.
+
+    
+
+The enumerate() function is useful if you need both the 
+item and the item’s index in the loop’s block.
+
+supplies = ['pens', 'staplers', 'flamethrowers', 'binders']
+for index, item in enumerate(supplies):
+    print('Index ' + str(index) + ' in supplies is: ' + item)
+
+The += operator can also do string and list concatenation, 
+and the *= operator can do string and list replication.
+
+lists are mutable, so the actual reference to the memory location is being changed.
+List values have an index() method that can be passed a value, and if that value exists in the list, the index of the value is returned.
+ If the value isn’t in the list, 
+ then Python produces a ValueError error. 
+
+You can use tuples to convey to anyone reading your code that you don’t intend for that sequence of values to change.
+If you need an ordered sequence of values that never changes, use a tuple.
+Tuples are immutable like strings
+
+tuples are faster than lists
+you can cast tuple and list types
+
+
+ The previous append() method call adds the argument to the end of the list. 
+ The insert() method can insert a value at any index in the list.
+  The first argument to insert() is the index for the new value, 
+ and the second argument is the new value to be inserted
+
+
+ The remove() method is passed the value to be removed from the list it is called on.
+
+sort() sorts items
+sort(reverse=True) sorts values in reverse
+
+
+If you need to sort the values in regular alphabetical order, pass str.lower for the key keyword argument in the sort() 
+ 
+
+del is good for deleteing the index 
+
+remove is good for removing values
+
+
+All values in Python have a unique identity that can be obtained with the id() function.
+
+
+Python provides a module named copy that provides both the copy() and deepcopy() functions. 
+The first of these, copy.copy(), 
+can be used to make a duplicate copy of a mutable 
+value like a list or dictionary, 
+not just a copy of a reference. 
+
+If the list you need to copy contains lists, then use the copy.deepcopy()
